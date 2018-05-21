@@ -21,9 +21,11 @@ https://github.com/niklassandberg/teensy_audio_extend
 3. Install Sloeber http://eclipse.baeyens.it/ (maybe not needed but makes life more simple then Arduino IDE, Arduino IDE still needs to be installed because Teensyduino has it as bependency)
 4. Launch Sloeber, open menu Arduino->Preference.
 5. Add the following configuration: 
-```Private Libary path: [Path to arduino dir]/Arduino/hardware/teensy/avr/libraries
-Private hardware path: [Path to arduino dir]/Arduino/hardware/teensy/avr```
-6. Restart
+```
+Private Libary path: [Arduino_Dir]/Arduino/hardware/teensy/avr/libraries
+Private hardware path: [Arduino_Dir]/Arduino/hardware/teensy/avr
+```
+6. Add Swarm project to your workspace.
 
 ### Oled 128x64, chipset SH1106 configuration: Wire is not compatible with SH1106 u8g. i2c_t3 is. Possible fix see below.
 1. Open [Path to arduino dir]/Arduino/hardware/teensy/avr/libraries/Wire.h
@@ -38,8 +40,7 @@ typedef i2c_t3 TwoWire;
 
 #endif
 ```
-5.1.2. Delete Wire.cpp and possible WireKinetis files if Arduino IDE is in use.
-6. Add this project to your workspace.
+3. Delete Wire.cpp and possible WireKinetis files if Arduino IDE is in use.
 
 ### Project configuration.
 
