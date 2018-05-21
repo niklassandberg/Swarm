@@ -4,11 +4,11 @@ Advanced granular effect pedal for guitarist. Code base is highly depended on Te
 ## Configuration/Setup
 
 ### Hardware
-Teensy 3.6
-Teensy audio board
-atmega328p
-6 rotary encoder
-Oled 128x64, chipset SH1106
+* Teensy 3.6
+* Teensy audio board
+* atmega328p
+* 6 rotary encoder
+* Oled 128x64, chipset SH1106
 
 ### IDE setup
 1. Install Arduino IDE https://www.arduino.cc/en/Main/Software
@@ -19,3 +19,4 @@ Oled 128x64, chipset SH1106
 6. ```Private Libary path: [Path to arduino dir]/Arduino/hardware/teensy/avr/libraries```
 7. ```Private hardware path: [Path to arduino dir]/Arduino/hardware/teensy/avr```
 8. For oled with chipset SH1106
+.....
