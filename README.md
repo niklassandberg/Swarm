@@ -39,13 +39,20 @@ typedef i2c_t3 TwoWire;
 5.2. Delete Wire.cpp and possible WireKinetis files if Arduino IDE is in use.
 6. Add this project to your workspace.
 
+### Project configuration.
+
+1. Open project preferences.
+2. Go to C/C++ General->Path and Symbols.
+4. In includes add FOR ALL: [Project]/includes
+5. Go to Source Location and add: [Project]/source
+
 ### Teensy audio extend configuration.
 
 1. Add https://github.com/niklassandberg/teensy_audio_extend to your workspace
-1. Open project preferences.
-2. Go to C/C++ General->Path and Sympols.
-3. In includes GNU C++ add: teensy_audio_extend
-4. Go to Source Location and add teensy_audio_extend.
+2. Open project preferences.
+3. Go to C/C++ General->Path and Symbols.
+4. In includes GNU C++ add: teensy_audio_extend
+5. Go to Source Location and add: teensy_audio_extend.
 
 TODO: rotary encoder setup.
 
