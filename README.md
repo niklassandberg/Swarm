@@ -13,9 +13,9 @@ Advanced granular effect pedal for guitarist. Code base is highly depended on Te
 ### Prodject dependencies
 
 TODO: fill in rotary encoder project.
+https://github.com/niklassandberg/teensy_audio_extend
 
-
-### IDE setup
+### IDE (Sloeber based) setup
 1. Install Arduino IDE https://www.arduino.cc/en/Main/Software
 2. Install Teensyduino https://www.pjrc.com/teensy/teensyduino.html
 3. Install Sloeber http://eclipse.baeyens.it/ (maybe not needed but makes life more simple then Arduino IDE, Arduino IDE still needs to be installed because Teensyduino has it as bependency)
@@ -37,4 +37,16 @@ typedef i2c_t3 TwoWire;
 #endif
 ```
 5.2. Delete Wire.cpp and possible WireKinetis files if Arduino IDE is in use.
-.....
+6. Add this project to your workspace.
+
+### Teensy audio extend configuration.
+
+1. Add https://github.com/niklassandberg/teensy_audio_extend to your workspace
+1. Open project preferences.
+2. Go to C/C++ General->Path and Sympols.
+3. In includes GNU C++ add: teensy_audio_extend
+4. Go to Source Location and add teensy_audio_extend.
+
+TODO: rotary encoder setup.
+
+
