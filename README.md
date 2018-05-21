@@ -28,7 +28,7 @@ Private hardware path: [Arduino_Dir]/Arduino/hardware/teensy/avr
 6. Add Swarm project to your workspace.
 
 ### Oled 128x64, chipset SH1106 configuration: Wire is not compatible with SH1106 u8g. i2c_t3 is. Possible fix see below.
-1. Open [Path to arduino dir]/Arduino/hardware/teensy/avr/libraries/Wire.h
+1. Open ```[Arduino_Dir]/Arduino/hardware/teensy/avr/libraries/Wire.h```
 2. Replace everything with:
 ```
 #ifndef TwoWire_h
@@ -45,17 +45,17 @@ typedef i2c_t3 TwoWire;
 ### Project configuration.
 
 1. Open project preferences.
-2. Go to C/C++ General->Path and Symbols.
-4. In includes add FOR ALL: [Project]/includes
-5. Go to Source Location and add: [Project]/source
+2. Go to ```C/C++ General->Path and Symbols.```
+4. In includes add FOR ALL: ```[Swarm_Project]/includes```
+5. Go to Source Location and add: ```[Swarm_Project]/source```
 
 ### Teensy audio extend configuration.
 
 1. Add https://github.com/niklassandberg/teensy_audio_extend to your workspace
 2. Open project preferences.
-3. Go to C/C++ General->Path and Symbols.
-4. In includes GNU C++ add: teensy_audio_extend
-5. Go to Source Location and add: teensy_audio_extend.
+3. Go to ```C/C++ General->Path and Symbols```.
+4. In ```includes GNU C++``` add: ```teensy_audio_extend```
+5. Go to ```Source Location``` and add: ```teensy_audio_extend```.
 
 TODO: rotary encoder setup.
 
