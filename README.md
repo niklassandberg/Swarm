@@ -54,7 +54,7 @@ typedef i2c_t3 TwoWire;
 1. Add https://github.com/niklassandberg/teensy_audio_extend to your workspace
 2. Open project preferences.
 3. Go to ```C/C++ General->Path and Symbols```.
-4. In ```includes GNU C++``` add: ```teensy_audio_extend```
+4. In ```includes GNU C++``` add: ```[teensy_audio_extend_Dir]/libraries```
 5. Go to ```Source Location``` and add: ```teensy_audio_extend```.
 
 TODO: rotary encoder setup.
