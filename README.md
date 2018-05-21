@@ -25,7 +25,7 @@ https://github.com/niklassandberg/teensy_audio_extend
 4.2.2. ```Private hardware path: [Path to arduino dir]/Arduino/hardware/teensy/avr```
 5. Oled 128x64, chipset SH1106 configuration: Wire is not compatible with SH1106 u8g. i2c_t3 is. Possible fix see below.
 5.1. Open [Path to arduino dir]/Arduino/hardware/teensy/avr/libraries/Wire.h
-5.1. Replace everything with 
+5.1.1 Replace everything with 
 ```
 #ifndef TwoWire_h
 #define TwoWire_h
@@ -36,7 +36,7 @@ typedef i2c_t3 TwoWire;
 
 #endif
 ```
-5.2. Delete Wire.cpp and possible WireKinetis files if Arduino IDE is in use.
+5.1.2. Delete Wire.cpp and possible WireKinetis files if Arduino IDE is in use.
 6. Add this project to your workspace.
 
 ### Project configuration.
