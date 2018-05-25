@@ -12,7 +12,7 @@ Advanced granular effect pedal for guitarist. Code base is highly depended on Te
 
 ### Prodject dependencies
 
-TODO: fill in rotary encoder project.
+https://github.com/niklassandberg/multiple-rotary-encoder
 https://github.com/niklassandberg/teensy_audio_extend
 
 ### IDE (Sloeber based) setup
@@ -56,7 +56,6 @@ typedef i2c_t3 TwoWire;
 3. Go to ```C/C++ General->Path and Symbols```.
 4. In ```includes GNU C++``` add: ```[teensy_audio_extend_Dir]/libraries```
 5. Go to ```Source Location``` and add: ```teensy_audio_extend```.
-
-TODO: rotary encoder setup.
+6. Follow instructions on https://github.com/niklassandberg/multiple-rotary-encoder
 
 
