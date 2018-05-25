@@ -25,7 +25,7 @@ https://github.com/niklassandberg/teensy_audio_extend
 Private Libary path: [Arduino_Dir]/Arduino/hardware/teensy/avr/libraries
 Private hardware path: [Arduino_Dir]/Arduino/hardware/teensy/avr
 ```
-6. Move out [Arduino_Dir]/Arduino/hardware/teensy/avr/examples from avr. It can lead to problems if included in buildpath
+6. Move out `[Arduino_Dir]/Arduino/hardware/teensy/avr/examples` from `avr` directory. It can lead to problems if included in buildpath
 7. Add Swarm project to your workspace.
 
 ### Oled 128x64, chipset SH1106 configuration: Wire is not compatible with SH1106 u8g. i2c_t3 is. Possible fix see below.
