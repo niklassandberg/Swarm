@@ -1,5 +1,5 @@
 # Swarm
-Advanced granular effect pedal for guitarist. Code base is highly depended on Teensyduino. This will maybe be changed in the future.
+Granular effect pedal for guitarist. Code base is highly depended on Teensyduino. This will maybe be changed in the future.
 
 ## Configuration/Setup
 
