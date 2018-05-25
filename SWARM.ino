@@ -23,7 +23,7 @@ void initParameters()
 {
 	for(size_t x = 0 ; x < 6 ; ++x)
 	{
-		parameters[x].bounds(0, 1024);
+//		parameters[x].bounds(0, 1024);
 		switcher[x].bounds(0, 1);
 	}
 }
@@ -34,7 +34,7 @@ void setup()
 	Serial1.begin(19200);
 
 	initAudio();
-	initDisplay(parameters);
+//	initDisplay(parameters);
 	initParameters();
 
 	lastChangeParameter(0);
@@ -53,10 +53,10 @@ void loop()
 
 		lastchange = protocol>>4;
 
-		BoundRotary& r = parameters[ lastchange ];
+//		BoundRotary& r = parameters[ lastchange ];
 		BoundRotary& sw = switcher[ lastchange ];
 
-		r.update(protocol & 3);
+//		r.update(protocol & 3);
 		sw.update( (protocol>>2) & 3);
 
 		lastChangeParameter(lastchange);

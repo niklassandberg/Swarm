@@ -135,8 +135,8 @@ public:
 
 	void value(uint8_t value)
 	{
-		if(value>64) mValue = 64;
-		else mValue = value;
+//		if(value>64) mValue = 64;
+//		else mValue = value;
 	}
 
 
@@ -272,7 +272,7 @@ void initDisplay (BoundRotary * test[])
 	{
 		boxes[x].init( x * (BOX_WIDTH + BOX_SPACE),
 				0, BOX_WIDTH, BOX_HEIGTH);
-		boxes[x].rotary( &(test[x]) );
+//		boxes[x].rotary( &(test[x]) );
 		boxes[x].name(metadata[x].first);
 		boxes[x].prefix(metadata[x].second);
 	}
