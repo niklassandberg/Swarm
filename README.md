@@ -19,11 +19,11 @@ https://github.com/niklassandberg/teensy_audio_extend
 1. Install Arduino IDE https://www.arduino.cc/en/Main/Software
 2. Install Teensyduino https://www.pjrc.com/teensy/teensyduino.html
 3. Install Sloeber http://eclipse.baeyens.it/ (maybe not needed but makes life more simple then Arduino IDE, Arduino IDE still needs to be installed because Teensyduino has it as bependency)
-4. Launch Sloeber, open menu Arduino->Preference.
-5. Add the following configuration: 
+4. Launch Sloeber, open menu Window->Preference, go down to 'Arduino'
+5. Add the libary and hardware configuration (Under Arduino15 or /Programe Files/Arudino, its wery strange now): 
 ```
-Private Libary path: [Arduino_Dir]/Arduino/hardware/teensy/avr/libraries
-Private hardware path: [Arduino_Dir]/Arduino/hardware/teensy/avr
+Private Libary path: ..../hardware/teensy/avr/libraries
+Private hardware path: .../hardware/teensy/avr
 ```
 6. Move out `[Arduino_Dir]/Arduino/hardware/teensy/avr/examples` from `avr` directory. It can lead to problems if included in buildpath
 7. Add Swarm project to your workspace.
